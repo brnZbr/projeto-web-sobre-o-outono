@@ -1,5 +1,9 @@
 /* CSS padrao de todas as paginas */
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: 'Playfair Display', serif;
     margin: 0;
@@ -9,6 +13,8 @@ body {
     line-height: 1.6;
     text-align: left;
     letter-spacing: 0.5px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     font-size: 20px;
 }
 
