@@ -1,5 +1,3 @@
-
-
 /* CSS padrao de todas as paginas */
 
 body {
@@ -15,7 +13,7 @@ body {
 }
 
 header {
-    background-color:#bb592b;
+    background-color: #bb592b;
     height: 120px;
     color: #fff8dc;
     padding: 1rem;
@@ -25,13 +23,30 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 760px) {
+    header {
+        background-color: #bb592b;
+        height: auto;
+        color: #fff8dc;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 3px solid #a0522d;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        display: none;
+    }
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     margin: 0;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 nav li {
@@ -51,7 +66,7 @@ nav a {
 
 nav a:hover {
     background-color: #8b4513;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -70,7 +85,7 @@ footer {
     border-radius: 6px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    
+
 }
 
 /* CSS do index */
@@ -85,15 +100,13 @@ footer {
 
 img {
     flex: 1;
-    min-width: 300px;
-    max-width: 500px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
-    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-img:hover{
-    transform: scale(1.02); 
+img:hover {
+    transform: scale(1.02);
 }
 
 .texto-destaque {
@@ -125,13 +138,14 @@ img:hover{
     border: 1px dashed #a0522d;
     opacity: 0.9;
 }
+
 /* CSS do sobre */
 
-.destaque2{
+.destaque2 {
     text-align: center;
- }
- 
- .destaque2 img{
+}
+
+.destaque2 img {
     width: 100%;
     height: 500px;
     margin: 2rem auto;
@@ -147,59 +161,47 @@ img:hover{
 .video-container {
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(139, 69, 19, 0.3); 
+    box-shadow: 0 8px 16px rgba(139, 69, 19, 0.3);
 }
 
 .video-container iframe {
     width: 100%;
     height: 500px;
-    display: block; 
+    display: block;
 }
 
 /* CSS do Atividades */
-#Sugestoes{
+
+.atividadesCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.atividadesCards .card {
     text-align: center;
-}
-
-table {
-    width: 100%;
-    border-spacing: 0;  
-    margin: 20px 0;
     background-color: #fff8dc;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    visibility: visible;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    
-}
-.Borda td{
-   border-bottom: 1px solid rgba(139, 69, 19, 0.3);
-}
-tr td strong{
-    font-size: 23px;
-}
-th {
-    background-color: #a0522d;
-    color: white;
-    font-size: 1.1em;
-    
+.cardContent {
+    padding: 15px;
 }
 
-table img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s;
-    cursor: zoom-in;
-}
-
-table img:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
+.imgCardDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0px;
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 16 / 8
 }
 
 /* CSS do Contato */
@@ -207,7 +209,7 @@ table img:hover {
 .formulario {
     max-width: 600px;
     margin: auto;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -217,7 +219,11 @@ table img:hover {
     margin-bottom: 15px;
 }
 
-.formulario, .formulario input, .formulario textarea, .formulario select, .formulario button {
+.formulario,
+.formulario input,
+.formulario textarea,
+.formulario select,
+.formulario button {
     box-sizing: border-box;
 }
 
@@ -227,7 +233,9 @@ label {
     font-weight: bold;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -241,7 +249,8 @@ textarea {
 }
 
 button {
-    background-color: #a0522d;;
+    background-color: #a0522d;
+    ;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -263,16 +272,24 @@ button:hover {
     nav ul {
         flex-direction: column;
     }
-    
+
     nav li {
         margin: 5px 0;
     }
-    
+
     .destaque {
         flex-direction: column;
     }
-    
+
     .destaque img {
         width: 100%;
+    }
+
+    .atividadesCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        overflow: hidden;
+        padding: 10px;
     }
 }

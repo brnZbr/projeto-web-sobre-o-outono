@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades de Outono</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=IM+Fell+English&family=Rye&family=EB+Garamond&family=Quicksand:wght@400;600&family=Pirata+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=IM+Fell+English&family=Rye&family=EB+Garamond&family=Quicksand:wght@400;600&family=Pirata+One&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,33 +23,65 @@
         </nav>
         <h1>Atividades Outonais</h1>
     </header>
-
     <main>
-        <section>
-            <h2 id="Sugestoes">Sugestões para aproveitar o Outono</h2>
-            <table>
-                <tr>
-                    <th>Atividade</th>
-                    <th>Descrição</th>
-                    <th>Imagem</th>
-                </tr>
-                <tr class="Borda">
-                    <td><strong>Caminhadas na natureza</strong></td>
-                    <td>Aproveite os parques e florestas com as belas cores do outono</td>
-                    <td><a href="https://www.temporadalivre.com/blog/os-melhores-parques-nacionais-para-visitar-no-brasil-durante-o-outono" target="_blank"><img src="img/caminhada.jpg" alt="Caminhada no outono"></a></td>
-                </tr>
-                <tr class="Borda">
-                    <td><strong>Coleta de folhas</strong></td>
-                    <td>Colete folhas coloridas para artesanato ou decoração</td>
-                    <td><a href="https://pt.modernagriculturefarm.com/plantio/1002020572.html" target="_blank"><img src="img/coleta-folhas.jpg" alt="Coleta de folhas"></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Degustar bebidas quentes</strong></td>
-                    <td>Chás, chocolates quentes e vinhos são perfeitos para o clima</td>
-                    <td><a href= "https://www.tudogostoso.com.br/receita/130871-chocolate-quente-cremoso.html" target="_blank"><img src="img/bebidas-quente.jpg" alt="Bebidas quentes"></a></td>
-                </tr>
-            </table>
-        </section>
+        <div class="atividadesCards">
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/caminhada.jpg" alt="Caminhada no outono">
+                </div>
+                <div class="cardContent">
+                    <h3>Caminhadas na natureza</h3>
+                    <p>Aproveite os parques e florestas com as belas cores do outono</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/coleta-folhas.jpg" alt="Coleta de folhas">
+                </div>
+                <div class="cardContent">
+                    <h3>Coleta de folhas</h3>
+                    <p>Colete folhas coloridas para artesanato ou decoração</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/bebidas-quente.jpg" alt="Bebidas quentes">
+                </div>
+                <div class="cardContent">
+                    <h3>Degustar bebidas quentes</h3>
+                    <p>Chás, chocolates quentes e vinhos são perfeitos para o clima</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/torta-maca.jpg" alt="Torta de maçã recém assada">
+                </div>
+                <div class="cardContent">
+                    <h3>Assar tortas caseiras</h3>
+                    <p>O aroma de maçã com canela ou abóbora assando no forno combina perfeitamente com a estação.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/leitura-aconchegante.jpg" alt="Pessoa lendo um livro com uma manta">
+                </div>
+                <div class="cardContent">
+                    <h3>Leitura aconchegante</h3>
+                    <p>Aproveite o clima ameno para ler aquele livro esquecido na estante enrolado em uma manta quente.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCardDiv">
+                    <img class="img" src="img/maratona-filmes.jpg" alt="Sessão de filmes com pipoca">
+                </div>
+                <div class="cardContent">
+                    <h3>Maratona de filmes</h3>
+                    <p>Reúna a família no sofá com bastante pipoca para assistir aos clássicos de outono e Halloween.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -53,4 +89,5 @@
         <p>&copy; 2023 A Magia Do Outono - Todos os direitos reservados</p>
     </footer>
 </body>
+
 </html>
